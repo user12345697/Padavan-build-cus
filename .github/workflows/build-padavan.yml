@@ -118,9 +118,9 @@ jobs:
         #sed -i '/自定义项/d' .config
         #echo "自定义项=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_QOS=y" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION_WEB_CONTROL=y" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_ARIA=y" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL=y" >> .config
+        #echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION_WEB_CONTROL=y" >> .config
+        #echo "CONFIG_FIRMWARE_INCLUDE_ARIA=y" >> .config
+        #echo "CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL=y" >> .config
         #########################################################################################
         sudo ./clear_tree
         sudo ./build_firmware_modify $TNAME 0
