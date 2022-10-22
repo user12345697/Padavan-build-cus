@@ -119,7 +119,8 @@ jobs:
         #格式如下：
         #sed -i '/自定义项/d' .config
         #echo "自定义项=y" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_QOS=y" >> .config
+        #echo "CONFIG_FIRMWARE_INCLUDE_QOS=y" >> .config
+        sed -i 's/CONFIG_FIRMWARE_INCLUDE_QOS=n/CONFIG_FIRMWARE_INCLUDE_QOS=y/g' .config
         #echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION_WEB_CONTROL=y" >> .config
         #echo "CONFIG_FIRMWARE_INCLUDE_ARIA=y" >> .config
         #echo "CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL=y" >> .config
